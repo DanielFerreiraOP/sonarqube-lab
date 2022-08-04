@@ -37,9 +37,12 @@ echo 'export PATH=$PATH:/opt/sonar-scanner/bin' | sudo tee -a /etc/profile
 curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum install nodejs -y
 
-##finalizando a instalação insira os códigoas a baixo no centos, para retirar o erro da versao 10
-#sudo yum clean all && sudo yum makecache fast
-#sudo yum install -y gcc-c++ make
-#sudo yum install -y nodejs
-#token do sonarqube
-#Analyze "node-app1": sqp_ac2a64dc860228431bbd0c2e790a329e48a123e0
+#depois do lab pronto precisamos passar para a proxima versão do node js
+#a versão 10 ta dando problema no sonar
+
+#sudo npm install -g n 
+#sudo npm install -g n 
+#sudo n stable 
+
+#reinicie a maquina com vagrant reload
+#verifique a versão com node -v
